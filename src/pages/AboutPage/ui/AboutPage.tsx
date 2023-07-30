@@ -5,6 +5,7 @@ const AboutPage = () => {
 
   return (
     <div>
+      пваы
       {t('О сайте')}
     </div>
   );
