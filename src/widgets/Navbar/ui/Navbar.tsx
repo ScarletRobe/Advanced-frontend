@@ -2,7 +2,7 @@ import classNames from 'classnames';
 
 import { AppLink } from 'shared/ui/AppLink/AppLink';
 
-import styles from './Navbar.module.scss'
+import styles from './Navbar.module.scss';
 
 interface NavbarProps {
   className?: string;
@@ -10,13 +10,11 @@ interface NavbarProps {
 
 export const Navbar = ({
   className,
-}: NavbarProps) => {
-  return (
-    <div className={classNames(styles.navbar, className)}>
-      <div className={styles.links}>
-        <AppLink to="/">Главная</AppLink>
-        <AppLink to="/about">О сайте</AppLink>
-      </div>
+}: NavbarProps) => (
+  <div className={classNames(styles.navbar, className)}>
+    <div className={styles.links}>
+      <AppLink to="/">Главная</AppLink>
+      <AppLink to="/about">О сайте</AppLink>
     </div>
-  );
-};
+  </div>
+);
