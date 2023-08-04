@@ -15,7 +15,7 @@ export const LangSwitcher = () => {
         i18n.changeLanguage(i18n.language === "en" ? "ru" : "en");
       }}
     >
-      {t("language")}
+      {t("Язык")}
     </Button>
   );
 };
