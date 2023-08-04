@@ -11,7 +11,7 @@
     "eslint:fix": "eslint **/*.{ts,tsx} --fix",
     "stylelint": "npx stylelint \"**/*.scss\"",
     "stylelint:fix": "npx stylelint \"**/*.scss\" --fix",
-    "test": "jest"
+    "test": "jest --config ./config/jest/jest.config.ts"
   },
   "keywords": [],
   "author": "",
