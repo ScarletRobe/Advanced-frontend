@@ -1,22 +1,17 @@
-import classNames from 'classnames';
-import { ButtonHTMLAttributes, FC } from 'react';
+import classNames from "classnames";
+import { ButtonHTMLAttributes, FC } from "react";
 
-import styles from './Button.module.scss';
+import styles from "./Button.module.scss";
 
-const ThemeVariants = ['clear'] as const;
+const ThemeVariants = ["clear"] as const;
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>{
-    className?: string;
-    theme?: (typeof ThemeVariants)[number];
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  className?: string;
+  theme?: (typeof ThemeVariants)[number];
 }
 
 export const Button: FC<ButtonProps> = (props) => {
-  const {
-    className,
-    children,
-    theme,
-    ...otherProps
-  } = props;
+  const { className, children, theme, ...otherProps } = props;
 
   return (
     <button
