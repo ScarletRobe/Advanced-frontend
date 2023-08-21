@@ -3,7 +3,7 @@ import { ButtonHTMLAttributes, FC } from "react";
 
 import styles from "./Button.module.scss";
 
-const ThemeVariants = ["clear"] as const;
+const ThemeVariants = ["clear", "outline"] as const;
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string;
