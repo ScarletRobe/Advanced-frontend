@@ -9,6 +9,7 @@ const AppRouter = () => (
     {Object.values(routeConfig).map((config) => (
       <Route
         {...config}
+        key={config.path}
         element={
           <Suspense fallback={<PageLoader />}>{config.element}</Suspense>
         }

@@ -15,19 +15,16 @@ export const RoutePath: Record<AppRoutes, string> = {
   [AppRoutes.NOT_FOUND]: "*",
 };
 
-export const routeConfig: Record<AppRoutes, RouteProps & { key: string }> = {
+export const routeConfig: Record<AppRoutes, RouteProps> = {
   [AppRoutes.MAIN]: {
-    key: RoutePath.main,
     path: RoutePath.main,
     element: <MainPage />,
   },
   [AppRoutes.ABOUT]: {
-    key: RoutePath.about,
     path: RoutePath.about,
     element: <AboutPage />,
   },
   [AppRoutes.NOT_FOUND]: {
-    key: RoutePath.not_found,
     path: RoutePath.not_found,
     element: <NotFoundPage />,
   },
