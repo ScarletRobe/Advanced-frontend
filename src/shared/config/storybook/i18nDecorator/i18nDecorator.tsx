@@ -6,9 +6,9 @@ import i18n from "shared/config/i18n/i18nForTests";
 export const i18nDecorator = (Story: StoryFn) => {
   return (
     <Suspense fallback={<div>loading translations...</div>}>
-     <I18nextProvider i18n={i18n}>
-       <Story />
-     </I18nextProvider>
-   </Suspense>
-  )
-}
+      <I18nextProvider i18n={i18n}>
+        <Story />
+      </I18nextProvider>
+    </Suspense>
+  );
+};

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import classNames from "classnames";
 
 import { ThemeSwitcher } from "widgets/ThemeSwitcher";
@@ -26,6 +26,7 @@ export const Sidebar = ({ className }: SidebarProps) => {
         className,
       )}
     >
+      {/* eslint-disable-next-line i18next/no-literal-string */}
       <button data-testid="sidebar_toggle" type="button" onClick={onToggle}>
         toggle
       </button>

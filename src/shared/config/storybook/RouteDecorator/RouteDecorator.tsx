@@ -6,5 +6,5 @@ export const RouteDecorator = (Story: StoryFn) => {
     <BrowserRouter>
       <Story />
     </BrowserRouter>
-  )
-}
+  );
+};
