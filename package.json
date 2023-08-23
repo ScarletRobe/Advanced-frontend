@@ -13,6 +13,7 @@
     "stylelint:fix": "npx stylelint \"**/*.scss\" --fix",
     "test": "jest --config ./config/jest/jest.config.ts",
     "test:ui": "npx loki test",
+    "test:ui:ci": "npx loki --requireReference --reactUri file:./storybook-static",
     "test:ui:ok": "npx loki approve",
     "storybook": "storybook dev -p 6006 -c ./config/storybook",
     "storybook:build": "storybook build -c ./config/storybook"
@@ -37,7 +38,7 @@
     "@svgr/webpack": "^6.2.1",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.3",
-    "@types/jest": "^27.4.1",
+    "@types/jest": "^27.5.2",
     "@types/node": "^17.0.45",
     "@types/react": "^17.0.39",
     "@types/react-dom": "^17.0.11",
